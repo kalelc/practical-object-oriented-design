@@ -15,3 +15,8 @@ Single responsibility guaranteed that classes and classes' methods always have o
 - Encourage reuse.
 - Are easy move to another class.
 
+---
+References
+
+- Practical Object Oriented Design in Ruby - Sandy Metz
+---
