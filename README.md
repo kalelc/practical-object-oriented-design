@@ -21,7 +21,7 @@ An object depens on another object if, when one object changes, the other might 
 
 ### Recognizing Dependencies
 
-An object has dependency when it knows.
+An object has dependency when it knows:
 
 - The name of another class.
 - The name of a message that it intends to send to someone other that self.
@@ -31,6 +31,18 @@ An object has dependency when it knows.
 ### Coupling between objects (CBO)
 
 The more the object A knows about object B, the more tightly coupled they are. The more tightly coupled two objects are, the more they behave like a single entity.
+
+### Isolate Dependencies
+
+It's best to break all unnecessary dependences but if you cannot remove dependencies you should isolate them within your class.
+
+### Choosing Dependency Direction
+
+Depend on things that change less often than you do. This is based on three simple truths about code:
+
+- Some classes are more likely than others to have changes in requirements. Example: Ruby's Class change less that you own code.
+- Concrete classes are more likely to change than abstract classes. Example: Depende 
+- Changing a class that has many dependents will result in widespread consequences.
 
 ---
 References
