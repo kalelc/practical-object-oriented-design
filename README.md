@@ -76,6 +76,19 @@ These chains are colloquially referred to as train wrecks; each method name repr
 Use delegation to avoid the "dots". Delegate a message is to pass it on to another object, ofter via a wrapper method. The wrapper method encapsulates, or
 hides, knowledge that would otherwise be enbodied in the message chain.
 
+## Duck Typing
+
+The Duck types are public interfaces that are not tied to any specific class. Duck typed objects are chameleons that are defined more by their behavior than by their class.
+This is how the technique gets its name; if an object quacks like a duck and walks like a duck, then its class is immaterial, it’s a duck.
+
+#### Recognizing Hidden Ducks
+
+Several common coding pattern indicate the presence of a hidden duck like:
+
+- Case statements that swich on class
+- `kind_of?` and `is_a?`
+- `responds_to?`
+
 ---
 References
 
