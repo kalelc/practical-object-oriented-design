@@ -69,6 +69,21 @@ All other methods in the class are part of its private interface. They:
 - Are unsafe for others to depend on.
 - May not even be referenced in the tests.
 
+## The Law of Demeter (LoD)
+
+It Also is known like Principle of least knowledge, is a set of coding rules that results in loosely coupled.
+Demeter restricts the set of objects to which a method may send messages; it prohibits routing a message to a
+third object via a second object of a *different type*. “only talk to your immediate neighbors” or “use only one dot.”
+
+Example: `customer.bicycle.wheel.tire`
+
+These chains are colloquially referred to as train wrecks; each method name represents a train car and the dots are the connections between them.
+
+### Avoiding Violations
+
+Use delegation to avoid the "dots". Delegate a message is to pass it on to another object, ofter via a wrapper method. The wrapper method encapsulates, or
+hides, knowledge that would otherwise be enbodied in the message chain.
+
 ---
 References
 
