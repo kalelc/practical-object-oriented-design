@@ -1,6 +1,4 @@
 class Driver
-  def gas_up(vehicle)
-  end
-  def fill_water_tank(vehicle)
+  def prepare_trip(trip)
   end
 end

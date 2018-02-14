@@ -1,4 +1,4 @@
 class TripCoordinator
-  def buy_food(customers)
+  def prepare_trip(trip)
   end
 end
