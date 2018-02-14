@@ -4,11 +4,11 @@
 
 Single responsibility guaranteed that classes and classes' methods always have one responsibility. A class should do the smallest possible useful thing.
 
-### Depend on behavior, Not Data.
+#### Depend on behavior, Not Data.
 - Hide instance variables.
 - Hide data structures.
 
-### Methods that have single responsability
+#### Methods that have single responsability
 
 - Avoid the neeed for comments.
 - Expose previosly hidden qualities.
@@ -19,7 +19,7 @@ Single responsibility guaranteed that classes and classes' methods always have o
 
 An object depens on another object if, when one object changes, the other might be forced to chage in turn.
 
-### Recognizing Dependencies
+#### Recognizing Dependencies
 
 An object has dependency when it knows:
 
@@ -28,15 +28,7 @@ An object has dependency when it knows:
 - The arguments that a message requires.
 - The order of those arguments.
 
-### Coupling between objects (CBO)
-
-The more the object A knows about object B, the more tightly coupled they are. The more tightly coupled two objects are, the more they behave like a single entity.
-
-### Isolate Dependencies
-
-It's best to break all unnecessary dependences but if you cannot remove dependencies you should isolate them within your class.
-
-### Choosing Dependency Direction
+#### Choosing Dependency Direction
 
 Depend on things that change less often than you do. This is based on three simple truths about code:
 
@@ -51,7 +43,7 @@ The word interface can refer to a number of different concepts:
 - Interfaces the same that methods.
 - Set of messages themselves define the interface like a virtual class.
 
-### Public Interfaces
+#### Public Interfaces
 
 The methods that make up the public interface of your class comprise the face it presents to the world. They:
 - Reveal its primary responsability.
@@ -60,7 +52,7 @@ The methods that make up the public interface of your class comprise the face it
 - Are safe for others to depend on.
 - Are thoroughly documented in the tests.
 
-### Private Interfaces
+#### Private Interfaces
 
 All other methods in the class are part of its private interface. They:
 - Handle implementation details.
@@ -79,7 +71,7 @@ Example: `customer.bicycle.wheel.tire`
 
 These chains are colloquially referred to as train wrecks; each method name represents a train car and the dots are the connections between them.
 
-### Avoiding Violations
+#### Avoiding Violations
 
 Use delegation to avoid the "dots". Delegate a message is to pass it on to another object, ofter via a wrapper method. The wrapper method encapsulates, or
 hides, knowledge that would otherwise be enbodied in the message chain.
