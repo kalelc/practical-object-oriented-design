@@ -1,4 +1,4 @@
-# Practical Object Oriented Design
+# Practical Object-Oriented Design
 
 ## Single Responsibility Principle
 
@@ -8,16 +8,16 @@ Single responsibility guaranteed that classes and classes' methods always have o
 - Hide instance variables.
 - Hide data structures.
 
-#### Methods that have single responsability
+#### Methods that have single responsibility
 
-- Avoid the neeed for comments.
-- Expose previosly hidden qualities.
+- Avoid the need for comments.
+- Expose previously hidden qualities.
 - Encourage reuse.
 - Are easy move to another class.
 
 ## Managing Dependencies
 
-An object depens on another object if, when one object changes, the other might be forced to chage in turn.
+An object depends on another object if, when one object changes, the other might be forced to change in turn.
 
 #### Recognizing Dependencies
 
@@ -46,7 +46,7 @@ The word interface can refer to a number of different concepts:
 #### Public Interfaces
 
 The methods that make up the public interface of your class comprise the face it presents to the world. They:
-- Reveal its primary responsability.
+- Reveal its primary responsibility.
 - Are expected to be invoked by others.
 - Will not change on a whim.
 - Are safe for others to depend on.
@@ -63,9 +63,9 @@ All other methods in the class are part of its private interface. They:
 
 ## The Law of Demeter (LoD)
 
-It Also is known like Principle of least knowledge, is a set of coding rules that results in loosely coupled.
+It Also is known as Principle of least knowledge, is a set of coding rules that results in loosely coupled.
 Demeter restricts the set of objects to which a method may send messages; it prohibits routing a message to a
-third object via a second object of a *different type*. “only talk to your immediate neighbors” or “use only one dot.”
+the third object via a second object of a *different type*. “only talk to your immediate neighbors” or “use only one dot.”
 
 Example: `customer.bicycle.wheel.tire`
 
@@ -74,7 +74,7 @@ These chains are colloquially referred to as train wrecks; each method name repr
 #### Avoiding Violations
 
 Use delegation to avoid the "dots". Delegate a message is to pass it on to another object, ofter via a wrapper method. The wrapper method encapsulates, or
-hides, knowledge that would otherwise be enbodied in the message chain.
+hides, a knowledge that would otherwise be embodied in the message chain.
 
 ## Duck Typing
 
@@ -83,14 +83,14 @@ This is how the technique gets its name; if an object quacks like a duck and wal
 
 #### Recognizing Hidden Ducks
 
-Several common coding pattern indicate the presence of a hidden duck like:
+Several common coding patterns indicate the presence of a hidden duck like:
 
-- Case statements that swich on class
+- Case statements that switch on class
 - `kind_of?` and `is_a?`
 - `responds_to?`
 
 ---
 References
 
-- Practical Object Oriented Design in Ruby - Sandy Metz
+- Practical Object-Oriented Design in Ruby - Sandy Metz
 ---
