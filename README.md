@@ -61,6 +61,21 @@ All other methods in the class are part of its private interface. They:
 - Are unsafe for others to depend on.
 - May not even be referenced in the tests.
 
+## Liskov Substitution Principle
+
+_if S is a subtype of T, then objects of type T may be replaced with objects of type S_
+
+                                          (T)
+                                        /     \
+                                       /       \
+                                      /         \
+                                     /           \
+                                   (S) same type (R)
+
+_Objects of type T (S, R) will be able to be replaced between themselves._
+
+Liskov substitution principle (LSP) is a particular definition of a subtyping relation, called (strong) behavioral subtyping.
+
 ## The Law of Demeter (LoD)
 
 It Also is known as Principle of least knowledge, is a set of coding rules that results in loosely coupled.
@@ -93,4 +108,5 @@ Several common coding patterns indicate the presence of a hidden duck like:
 References
 
 - Practical Object-Oriented Design in Ruby - Sandy Metz
+- https://en.wikipedia.org/wiki/Liskov_substitution_principle
 ---
