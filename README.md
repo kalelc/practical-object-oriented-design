@@ -1,5 +1,16 @@
 # Practical Object-Oriented Design
 
+### Content
+
+- Single Responsibility Principle
+- Managing Dependencies
+- Creating Flexible Interfaces
+- Liskov Substitution Principle
+- Law of Demeter
+- Duck Typing
+
+---
+
 ## Single Responsibility Principle
 
 Single responsibility guaranteed that classes and classes' methods always have one responsibility. A class should do the smallest possible useful thing.
